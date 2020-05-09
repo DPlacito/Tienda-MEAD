@@ -1,13 +1,40 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>FrontendTienda</title>
+  <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/dist/css/style.css">
+  <link rel="stylesheet" id="theme">
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/x-icon" href="assets/logo.png">
 </head>
-<body>
-  <my-org-root></my-org-root>
+
+<body class="fix-header card-no-border fix-sidebar">
+  <my-org-root>
+    <div class="app-loading">
+      <div class="logo">
+        <svg class="spinner" viewBox="25 25  50 50">
+          <circle class="path" cx=50 cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" />
+        </svg>
+      </div>
+
+    </div>
+  </my-org-root>
+
+  <script src="assets/plugins/jquery/jquery.min.js"></script>
+  <script src="assets/plugins/bootstrap/js/popper.min.js"></script>
+  <script src="assets/plugins/bootstrap/js/bootstrap.js"></script>
+  <script src="assets/dist/js/perfect-scrollbar.jquery.min.js"></script>
+  <script src="assets/dist/js/waves.js"></script>
+  <script src="assets/dist/js/sidebarmenu.js"></script>
+  <script src="assets/plugins/sticky-kit-master/dist/sticky-kit.js"></script>
+  <script src="assets/plugins/sparkline/jquery.charts-sparkline.js"></script>
+  <script src="assets/dist/js/custom.js"></script>
+  <script src="assets/plugins/styleswitcher/jQuery.style.switcher.js"></script>
+
 </body>
+
 </html>
