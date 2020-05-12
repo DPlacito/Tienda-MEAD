@@ -30,7 +30,7 @@ export class ComponentComponent implements OnInit {
   constructor(
     private fb: FormBuilder,
     private alerts: AlertsService
-  ) { this.loadForm() }
+  ) { this.loadForm(); }
 
   ngOnInit(): void {
   }
@@ -39,7 +39,7 @@ export class ComponentComponent implements OnInit {
     if (this.form.invalid) {
       return Object.values(this.form.controls).forEach(controls => {
         controls.markAllAsTouched()
-      })
+      });
     }
     console.log(this.form.value)
   }
