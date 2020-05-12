@@ -1,20 +1,20 @@
 body,
-html{
+html {
     height: 100%;
 }
 
-.app-loading{
+.app-loading {
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100%;
-} 
+}
 
-.app-loading .spinner{
-    height: 200%;
-    width: 200%;
+.app-loading .spinner {
+    height: 200px;
+    width: 200px;
     animation: rotate 2s linear infinite;
     transform-origin: center center;
     position: absolute;
@@ -22,11 +22,11 @@ html{
     bottom: 0;
     left: 0;
     right: 0;
-    margin: auto
+    margin: auto;
 }
 
-.app-loading .spinner .path{
-    stroke-dasharray: 1,200;
+.app-loading .spinner .path {
+    stroke-dasharray: 1, 200;
     stroke-dashoffset: 0;
     animation: dash 1.5s ease-in-out infinite;
     stroke-linecap: round;
@@ -36,22 +36,20 @@ html{
 @keyframes rotate {
     100% {
         transform: rotate(360deg);
-    } 
+    }
 }
 
 @keyframes dash {
-    0%{
-stroke-dasharray: 1,200;
-stroke-dashoffset: 0;
+    0% {
+        stroke-dasharray: 1, 200;
+        stroke-dashoffset: 0;
     }
-    50%{
-        stroke-dasharray: 89,200;
-stroke-dashoffset: -35;
-
+    50% {
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: -35px;
     }
-    100%{
-        stroke-dasharray: 89,200;
-stroke-dashoffset: -124;
-
+    100% {
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: -124px;
     }
 }
